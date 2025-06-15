@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Norid | Services</title>
+    <script>
+        if (localStorage.getItem("theme") === "dark") {
+            document.documentElement.classList.add("dark");
+        }
+    </script>
+    <link rel="stylesheet" href="navbar.css">
+    <script src="toggle-mode.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="services-styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="links-button">
+            <i class="ri-menu-fill nav-icon"></i>
+        </div>
+        <div class="nav-links">
+            <a class="nav-link" href="index.html">HOME</a>
+            <div class="portfolio-links">
+                <a class="nav-link portfolio-link" href="work.html">PORTFOLIOS <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <path d="M12 14L8 10H16L12 14Z"></path>
+                    </svg></a>
+                <div class="portfolios-dropdown">
+                    <a class="portfolio-dropdown-link" href="graphic-design-portfolio.html">Graphic Design</a>
+                    <a class="portfolio-dropdown-link" href="#">Website Creation</a>
+                </div>
+            </div>
+            <div class="services-links">
+                <a class="nav-link services-link" href="services.html">SERVICES <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <path d="M12 14L8 10H16L12 14Z"></path>
+                    </svg></a>
+                <div class="services-dropdown">
+                    <a class="service-dropdown-link" href="#">Graphic Design</a>
+                    <a class="service-dropdown-link" href="#">Website Creation</a>
+                </div>
+            </div>
+            <a class="nav-link" href="aboutme.html">ABOUT ME</a>
+            <a class="nav-link" href="contact.html">CONTACT</a>
+            <a class="nav-link" href="legal.html">LEGAL</a>
+        </div>
+        <div class="nav-icons">
+            <i class="ri-contrast-fill nav-icon" id="toggle-dark"></i>
+            <a class="hire-me" href="hire-me.html">HIRE ME</a>
+        </div>
+    </nav>
+    <main class="main">
+        <div class="main-container">
+            <h1 class="page-heading">Services</h1>
+
+
+            <div class="categories-container">
+                <div class="categories">
+                    <button class="category-button active" id="graphicDesignBtn">Graphic Design</button>
+                    <button class="category-button" id="websiteCreationBtn">Website Creation</button>
+
+                </div>
+            </div>
+
+            <div class="graphic-design-services-container active" id="graphicDesignServicesContainer">
+                <div class="graphic-design-services-grid">
+
+                    <div class="graphic-design-service-card">
+                        <h3>Photo Editing & Retouching</h3>
+                        <ul>
+                            <li>Basic Photo Editing</li>
+                            <li>Photo Manipulation</li>
+                            <li>Remove/Add Objects in Photos</li>
+                            <li>Face Retouching</li>
+                            <li>Product Retouching</li>
+                        </ul>
+                    </div>
+
+                    <div class="graphic-design-service-card">
+                        <h3>Branding & Identity Design</h3>
+                        <ul>
+                            <li>Logo Design</li>
+                            <li>Mascot and Avatar Design</li>
+                            <li>Profile Picture Design</li>
+                            <li>Business Card Design</li>
+                        </ul>
+                    </div>
+
+                    <div class="graphic-design-service-card">
+                        <h3>Social Media & Content Design</h3>
+                        <ul>
+                            <li>YouTube Thumbnail Design</li>
+                            <li>Social Media Banner Design</li>
+                            <li>Social Media Post Design</li>
+                            <li>Ad Design</li>
+                        </ul>
+                    </div>
+
+                    <div class="graphic-design-service-card">
+                        <h3>Marketing & Print Design</h3>
+                        <ul>
+                            <li>Flyer Design</li>
+                            <li>Poster Design</li>
+                            <li>Billboard Design</li>
+                            <li>Stickers Design</li>
+                            <li>T-shirt and Apparel Design</li>
+                            <li>E-Book Cover Design</li>
+                            <li>Email Newsletter Template Design</li>
+                            <li>Infographics Design</li>
+                        </ul>
+                    </div>
+
+                    <div class="graphic-design-service-card">
+                        <h3>Illustration & Art</h3>
+                        <ul>
+                            <li>Vector Art</li>
+                            <li>Illustrations</li>
+                        </ul>
+                    </div>
+
+                    <div class="graphic-design-service-card">
+                        <h3>Presentation & Document Design</h3>
+                        <ul>
+                            <li>Presentation Slides</li>
+                        </ul>
+                    </div>
+
+                    <div class="graphic-design-service-card">
+                        <h3>GIF Editing</h3>
+                        <ul>
+                            <li>Raster GIFs</li>
+                            <li>Vector GIFs</li>
+                            <li>GIF Editing</li>
+                        </ul>
+                    </div>
+
+                    <div class="graphic-design-service-card">
+                        <h3>Others</h3>
+                        <ul>
+                            <li>Font Design</li>
+                            <li>Cartoonize</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="website-creation-services-container" id="websiteCreationServicesContainer">
+                <div class="website-creation-services-grid">
+
+                    <div class="website-creation-service-card">
+                        <h3>Web Design</h3>
+                        <ul>
+                            <li>UI Design</li>
+                            <li>Mobile App UI Design</li>
+                            <li>Prototyping (Figma / Adobe XD)</li>
+                            <li>Website Branding</li>
+                            <li>Simple Website Design (1-2 Pages)</li>
+                            <li>Landing Page Design</li>
+                            <li>Business Website Design</li>
+                            <li>Portfolio Website Design</li>
+                            <li>Personal Website Design</li>
+                            <li>Full-Fledged Web App Design</li>
+                        </ul>
+                    </div>
+
+                    <div class="website-creation-service-card">
+                        <h3>Web Development</h3>
+                        <ul>
+                            <li>HTML5, CSS3, Javascript</li>
+                            <li>Tailwind / Bootstrap Integration</li>
+                            <li>Simple Website Development (1-2 Pages)</li>
+                            <li>Landing Page Development</li>
+                            <li>Business Website Development</li>
+                            <li>Portfolio Website Development</li>
+                            <li>Personal Website Development</li>
+                            <li>Full-Fledged Web App Development</li>
+                        </ul>
+                    </div>
+
+                    <div class="website-creation-service-card">
+                        <h3>Others</h3>
+                        <ul>
+                            <li>Wordpress Website</li>
+                            <li>Carrd Website</li>
+                            <li>Framer Website</li>
+                            <li>Github Pages</li>
+                            <li>SEO Optimization</li>
+                            <li>Bug Fixes</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 
+        <div class="web-design-tab">
+            <h1>this is the web design tab</h1>
+        </div>
+
+        <div class="web-dev-tab">
+            <h1>this is the web dev tab</h1>
+        </div> -->
+
+    </main>
+
+    <script src="services-script.js"></script>
+</body>
+
+</html>

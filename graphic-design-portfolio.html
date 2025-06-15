@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Norid | Graphic Design Portfolio</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="graphic-design-portfolio-styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- <div class="navbar">
+        <div class="links-button">
+            <i class="ri-menu-fill nav-icon"></i>
+        </div>
+        <div class="nav-links">
+            <a class="nav-link" href="index.html">HOME</a>
+            <div class="portfolio-links">
+                <a class="nav-link portfolio-link" href="work.html">PORTFOLIOS <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <path d="M12 14L8 10H16L12 14Z"></path>
+                    </svg></a>
+                <div class="portfolios-dropdown">
+                    <a class="portfolio-dropdown-link" href="#">Art & Design</a>
+                    <a class="portfolio-dropdown-link" href="#">Web Development</a>
+                </div>
+            </div>
+            <div class="services-links">
+                <a class="nav-link services-link" href="work.html">SERVICES <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <path d="M12 14L8 10H16L12 14Z"></path>
+                    </svg></a>
+                <div class="services-dropdown">
+                    <a class="service-dropdown-link" href="#">Graphic Design Projects</a>
+                    <a class="service-dropdown-link" href="#">Web Projects</a>
+                </div>
+            </div>
+            <a class="nav-link" href="aboutme.html">ABOUT ME</a>
+            <a class="nav-link" href="#">CONTACT</a>
+            <a class="nav-link" href="legal.html">LEGAL</a>
+        </div>
+        <div class="nav-icons">
+            <i class="ri-contrast-fill nav-icon" id="toggle-dark"></i>
+            <button class="hire-me">HIRE ME</button>
+        </div>
+    </div>
+
+
+    <main class="main">
+        <h1 class="page-heading">Graphic Design Portfolio</h1>
+        <div class="details-container">
+            <p>The following is some of my Graphic Design work. You can use filters to see different types.</p>
+            <p>Last Updated: 06/06/2025</p>
+        </div>
+        <div class="heading">
+            <h2>All</h2>
+            <div class="cateogry-dropdown">
+                <h3>Category: </h3>
+            </div>
+        </div> -->
+    <!-- <div class="projects">
+
+        </div> -->
+
+    <div class="gallery">
+        <img class="thumbnail" id="thumbnail" src="Graphic Design Projects/New Edits/02/After.jpg" alt="">
+    </div>
+
+    
+    <div class="slideshow" id="slideshow">
+        <div class="icons" id="icons">
+            <svg class="close-icon" id="closeIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="currentColor"><path d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z"></path></svg>
+            <div class="arrows">
+                <svg class="arrow left-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="64" height="64" fill="currentColor">
+                    <path
+                        d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z">
+                    </path>
+                </svg>
+                <svg class="arrow right-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="64" height="64" fill="currentColor">
+                    <path
+                        d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z">
+                    </path>
+                </svg>
+            </div>
+    
+        </div>
+        <div class="container">
+            <div class="image-container">
+                <img class="image-before slider-image"
+                    src="Graphic Design Projects/New Edits/02/Before.jpg"
+                    alt="" / id="beforeImage">
+                <img class="image-after slider-image"
+                    src="Graphic Design Projects/New Edits/02/After.jpg"
+                    alt="" / id="afterImage">
+                <input type="range" min="0" max="100" value="33" aria-label="Percentage of before photo shown"
+                    class="slider" id="slider" />
+                <div class="slider-line" id="slider" aria-hidden="true"></div>
+                <div class="slider-button" id="slider" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        viewBox="0 0 256 256">
+                        <rect width="256" height="256" fill="none"></rect>
+                        <line x1="128" y1="40" x2="128" y2="216" fill="none" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                        <line x1="96" y1="128" x2="16" y2="128" fill="none" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></line>
+                        <polyline points="48 160 16 128 48 96" fill="none" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></polyline>
+                        <line x1="160" y1="128" x2="240" y2="128" fill="none" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                        <polyline points="208 96 240 128 208 160" fill="none" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="image-details">
+            <h3 class="id">Photo Manipulation</h3>
+            <div>
+
+                <button class="button compare-button active" id="compare">Compare</button>
+                <button class="button before-button" id="before">Before</button>
+                <button class="button after-button" id="after">After</button>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- </main> -->
+
+    <script src="graphic-design-portfolio-script.js"></script>
+</body>
+
+</html>

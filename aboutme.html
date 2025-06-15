@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        if (localStorage.getItem("theme") === "dark") {
+            document.documentElement.classList.add("dark");
+        }
+    </script>
+    <link rel="stylesheet" href="aboutme-styles.css">
+    <link rel="stylesheet" href="navbar.css">
+    <script src="toggle-mode.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <title>Norid | About Me</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="links-button">
+            <i class="ri-menu-fill nav-icon"></i>
+        </div>
+        <div class="nav-links">
+            <a class="nav-link" href="index.html">HOME</a>
+            <div class="portfolio-links">
+                <a class="nav-link portfolio-link" href="work.html">PORTFOLIOS <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <path d="M12 14L8 10H16L12 14Z"></path>
+                    </svg></a>
+                <div class="portfolios-dropdown">
+                    <a class="portfolio-dropdown-link" href="graphic-design-portfolio.html">Graphic Design</a>
+                    <a class="portfolio-dropdown-link" href="#">Website Creation</a>
+                </div>
+            </div>
+            <div class="services-links">
+                <a class="nav-link services-link" href="services.html">SERVICES <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <path d="M12 14L8 10H16L12 14Z"></path>
+                    </svg></a>
+                <div class="services-dropdown">
+                    <a class="service-dropdown-link" href="#">Graphic Design</a>
+                    <a class="service-dropdown-link" href="#">Website Creation</a>
+                </div>
+            </div>
+            <a class="nav-link" href="aboutme.html">ABOUT ME</a>
+            <a class="nav-link" href="contact.html">CONTACT</a>
+            <a class="nav-link" href="legal.html">LEGAL</a>
+        </div>
+        <div class="nav-icons">
+            <i class="ri-contrast-fill nav-icon" id="toggle-dark"></i>
+            <a class="hire-me" href="hire-me.html">HIRE ME</a>
+        </div>
+    </nav>
+    <main class="main">
+        <div class="main-container">
+            <h1 class="page-heading">About Me</h1>
+            <p>
+                I'm Norid, a 16 year-old Digital Designer and Developer. I have expertise in different fields of design
+                and coding, below are the details of what I can do for you and why should hire me. If you want to know
+                more about who I am, you can visit my other website norid.me.
+            </p>
+            <h2 class="main-heading graphic-design-main-heading">GRAPHIC DESIGN</h2>
+            <p>
+                I started basic photo editing in 2016, back then I used to
+                use a tablet. Then I moved to PC in 2018 and ever since, Photoshop's always open in the background. From
+                Logo Designing to
+                Photo Manipulation, I've covered it all. You'll find a full list of what Graphic Design services I offer
+                in
+                <a class="link services-link" href="#">Services</a>.
+            </p>
+            <h3 class="heading graphic-design-heading">Software I use for Graphic Design:</h3>
+            <ul class="list graphic-design-list">
+                <li>Adobe Photoshop</li>
+                <li>Adobe Lightroom</li>
+                <li>Adobe Illustrator</li>
+                <li>Artificial Intelligence (always explicitly pointed out)</li>
+            </ul>
+            <h2 class="main-heading web-design-main-heading">WEB DESIGN</h2>
+            <p>
+                When it comes to Web Design, I've started not as long ago as 2016 but I've been in the field for a few
+                months now, confident enough to say I understand every type of design and can provide satisfactory
+                service,
+                a great deal of my Graphic Design knowledge like Color Theory and other design rules applied making it
+                easier for me to grasp Web Design in little time.
+            </p>
+            <h3 class="heading web-design-heading">Software I use for Web Design:</h3>
+            <ul class="list web-design-list">
+                <li>Figma</li>
+                <li>Adobe XD</li>
+            </ul>
+            <h2 class="main-heading web-dev-main-heading">WEB DEVELOPMENT</h2>
+            <p>
+                Coding has been my dream for a long time and I'm glad to say I've reached a point where I can code. No
+                matter what design you have, I'll bring it to life for you. Let's take your business to the online
+                world!
+            </p>
+            <h3 class="heading ide-heading">IDE I use for coding:</h3>
+            <ul class="list ide-list">
+                <li>VS Code</li>
+            </ul>
+            <h3 class="heading web-dev-heading">Languages, Frameworks and Libraries I use for Web Development:</h3>
+            <ul class="list web-dev-list">
+                <li>HTML</li>
+                <li>Tailwind CSS</li>
+                <li>Javascript</li>
+                <li>React JS</li>
+                <li>Next JS</li>
+            </ul>
+            <h2 class="main-heading why-choose-me-main-heading">Why choose me?</h2>
+            <p>
+                There are a lot of Graphic Designers, Web Designers and Web Developers out there, so... why should you
+                choose me? Below are some reasons that makes me different from most of them.
+            </p>
+            <ol class="list why-choose-me-lists">
+                <li>If you're low on ideas, I can suggest ideas based on your preference and surprise you with different
+                    designs most of which I'm sure you'll like. But if you've got a script for me, I'll make sure to
+                    stick to that and not include or exclude anything.</li>
+                <li>My knowledge in different fields allows me to better understand everything I do better than those
+                    who are only proficient in one field.</li>
+                <li>All the work I do is done by myself, there's no third party involved whatsoever, if there's ever a
+                    need to use Artificial Intelligence, I will absolutely not use it until your approval and even then
+                    the use of AI will be explicitly stated.</li>
+                <li>I don't just treat you as a client, we work together as friends, to me it feels like as if I'm
+                    working for myself.</li>
+                <li>There are no hidden extra fees, everything is clearly stated in the <a class="link hire-me-link"
+                        href="#">HIRE ME</a> section and I'll not charge anything beyond that.</li>
+                <li>If unfortunately I'm not able to provide what you were looking for, I'll do a 100% refund.</li>
+                <li>I prioritize your satisfaction with my work above all.</li>
+                <li>I am very flexible with how I work, no matter which timezone you have, we'll almost always be able
+                    to work efficiently.</li>
+            </ol>
+        </div>
+    </main>
+</body>
+
+</html>

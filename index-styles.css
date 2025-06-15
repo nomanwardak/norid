@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Space Mono', monospace;
+    background: white;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+html.dark {
+    background: #111;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 94vw;
+    height: 88vh;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.main.dark {
+    border: 2px solid white;
+    transition: all 0.1s ease;
+}
+
+.norid {
+    width: 750px;
+    height: auto;
+}
+
+.norid.dark {
+    filter: invert(1);
+}
+
+.main-buttons {
+    display: flex;
+    gap: 40px;
+}
+
+.main-button {
+    border-radius: 5px;
+}
+
+.main-button-1 {
+    display: flex;
+    font-family: 'Space Mono', monospace;
+    width: 200px;
+    height: 60px;
+    border: 2px solid black;
+    background: white;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.main-button-1.dark {
+    background: black;
+    color: white;
+    border: 2px solid white;
+}
+
+.main-button-1:hover {
+    color: white;
+    background: black;
+}
+
+.main-button-1.dark:hover {
+    color: black;
+    background-color: white;
+}
+
+.main-button-2 {
+    display: flex;
+    font-family: 'Space Mono', monospace;
+    width: 200px;
+    height: 60px;
+    border: 2px solid black;
+    background: black;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.main-button-2.dark {
+    background: white;
+    color: black;
+}
+
+.main-button-2:hover {
+    color: black;
+    background: white;
+}
+
+.main-button-2.dark:hover {
+    background: black;
+    color: white;
+    border: 2px solid white;
+}
+
+.titles-and-legal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titles {
+    position: absolute;
+    bottom: 3vh;
+    left: 3vw;
+    font-size: 14px;
+}
+
+html.dark .titles {
+    color: white;
+}
+
+.legal-notice {
+    position: absolute;
+    bottom: 3vh;
+    right: 3vw;
+}
+
+html.dark .legal-notice {
+    color: white;
+}
+
+.legal-notice a {
+    color: hsl(213, 100%, 25%);
+}
+
+.legal-notice a:hover {
+    color: hsl(213, 100%, 17%);
+}
+
+html.dark .legal-notice a {
+    color: hsl(213, 100%, 87%);
+}
+
+html.dark .legal-notice a:hover {
+    color: hsl(213, 100%, 79%);
+}
+
+@media only screen and (max-width: 600px) {
+    .norid {
+        width: 300px;
+    }
+
+    .titles {
+        font-size: 12px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-icons {
+        position: absolute;
+        right: 4vw;
+    }
+
+    .links-button {
+        display: inline-block;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .norid {
+        width: 300px;
+    }
+    
+    .titles {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .norid {
+        width: 450px;
+    }
+
+    .titles {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .norid {
+        width: 600px;
+    }
+
+    .titles {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .norid {
+        width: 750px;
+    }
+
+    .titles {
+        font-size: 14px;
+    }
+}

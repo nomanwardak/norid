@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Norid | Page Not Found</title>
+    <script>
+        if (localStorage.getItem("theme") === "dark") {
+            document.documentElement.classList.add("dark");
+        }
+    </script>
+    <link rel="stylesheet" href="404-error-styles.css">
+    <link rel="stylesheet" href="navbar.css">
+    <script src="toggle-mode.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="links-button">
+            <i class="ri-menu-fill nav-icon"></i>
+        </div>
+        <div class="nav-links">
+            <a class="nav-link" href="index.html">HOME</a>
+            <div class="portfolio-links">
+                <a class="nav-link portfolio-link" href="work.html">PORTFOLIOS <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <path d="M12 14L8 10H16L12 14Z"></path>
+                    </svg></a>
+                <div class="portfolios-dropdown">
+                    <a class="portfolio-dropdown-link" href="graphic-design-portfolio.html">Graphic Design</a>
+                    <a class="portfolio-dropdown-link" href="#">Website Creation</a>
+                </div>
+            </div>
+            <div class="services-links">
+                <a class="nav-link services-link" href="services.html">SERVICES <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <path d="M12 14L8 10H16L12 14Z"></path>
+                    </svg></a>
+                <div class="services-dropdown">
+                    <a class="service-dropdown-link" href="#">Graphic Design</a>
+                    <a class="service-dropdown-link" href="#">Website Creation</a>
+                </div>
+            </div>
+            <a class="nav-link" href="aboutme.html">ABOUT ME</a>
+            <a class="nav-link" href="contact.html">CONTACT</a>
+            <a class="nav-link" href="legal.html">LEGAL</a>
+        </div>
+        <div class="nav-icons">
+            <i class="ri-contrast-fill nav-icon" id="toggle-dark"></i>
+            <a class="hire-me" href="hire-me.html">HIRE ME</a>
+        </div>
+    </nav>
+    <main class="main">
+        <div class="main-container">
+            <h1>404</h1>
+            <p>Oops! The page you're looking for doesn't exist.</p>
+            <a href="index.html">Go back home</a>
+        </div>
+    </main>
+</body>
+
+</html>

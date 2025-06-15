@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        if (localStorage.getItem("theme") === "dark") {
+            document.documentElement.classList.add("dark");
+        }
+    </script>
+    <link rel="stylesheet" href="work-styles.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <script src="toggle-work.js" defer></script>
+    <title>Norid | Work</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="links-button">
+            <i class="ri-menu-fill nav-icon"></i>
+        </div>
+        <div class="nav-links">
+            <a class="nav-link" href="index.html">HOME</a>
+            <div class="portfolio-links">
+                <a class="nav-link portfolio-link" href="work.html">PORTFOLIOS <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <path d="M12 14L8 10H16L12 14Z"></path>
+                    </svg></a>
+                <div class="portfolios-dropdown">
+                    <a class="portfolio-dropdown-link" href="graphic-design-portfolio.html">Graphic Design</a>
+                    <a class="portfolio-dropdown-link" href="#">Website Creation</a>
+                </div>
+            </div>
+            <div class="services-links">
+                <a class="nav-link services-link" href="services.html">SERVICES <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <path d="M12 14L8 10H16L12 14Z"></path>
+                    </svg></a>
+                <div class="services-dropdown">
+                    <a class="service-dropdown-link" href="#">Graphic Design</a>
+                    <a class="service-dropdown-link" href="#">Website Creation</a>
+                </div>
+            </div>
+            <a class="nav-link" href="aboutme.html">ABOUT ME</a>
+            <a class="nav-link" href="contact.html">CONTACT</a>
+            <a class="nav-link" href="legal.html">LEGAL</a>
+        </div>
+        <div class="nav-icons">
+            <i class="ri-contrast-fill nav-icon" id="toggle-dark"></i>
+            <a class="hire-me" href="hire-me.html">HIRE ME</a>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="main-container">
+            <h1 class="page-heading">My Work</h1>
+
+            <p class="details">I have worked on hundreds of projects in different niches. Below are some examples of my
+                Graphic Design work and Web Projects. Do let me know how they look! Also note that the following
+                projects are just a representation of my work and do not set limits for what I can create, these are
+                just a few random artworks I picked and are not supposed to contain exactly the niche you're looking
+                for.</p>
+
+            <div class="cards">
+                <div class="card card-1">
+                    Graphic<br />Design
+                </div>
+                <div class="card card-2">
+                    Web Design<br />& Development
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

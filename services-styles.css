@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Space Mono', monospace;
+    background: white;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+html.dark {
+    background: black;
+}
+
+.main {
+    width: 94vw;
+    height: 88vh;
+    margin: 0 auto;
+    border: 2px solid black;
+    padding: 30px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    border-radius: 5px;
+}
+
+html.dark .main {
+    border: 2px solid white;
+    transition: all 0.1s ease;
+}
+
+/* .main-container {
+    max-width: 640px;
+    margin: 0 auto;
+} */
+
+.page-heading {
+    font-size: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'Pixel Emulator', 'Space Mono', monospace;
+}
+
+html.dark .page-heading {
+    color: white;
+}
+
+.main-heading {
+    font-size: 32px;
+}
+
+.categories-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px; */
+    margin-bottom: 30px;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.category-button {
+    font-family: 'Space Mono', monospace;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+html.dark .category-button {
+    border: 2px solid white;
+    color: white;
+    background-color: black;
+}
+
+.category-button:hover {
+    color: white;
+    background-color: black;
+}
+
+html.dark .category-button:hover {
+    color: black;
+    background-color: white;
+}
+
+.category-button.active {
+    color: white;
+    background-color: black;
+}
+
+html.dark .category-button.active {
+    color: black;
+    background-color: white;
+}
+
+.graphic-design-services-container {
+    display: none;
+    justify-content: center;
+}
+
+.graphic-design-services-container.active {
+    display: flex;
+}
+
+.graphic-design-services-grid {
+    column-count: 3;
+    column-gap: 30px;
+    max-width: 1200px;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.graphic-design-service-card {
+    background: white;
+    break-inside: avoid;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border: 2px solid black;
+}
+
+html.dark .graphic-design-service-card {
+    background: black;
+    border: 2px solid white;
+}
+
+.graphic-design-service-card h3 {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.graphic-design-service-card ul {
+    padding-left: 20px;
+}
+
+.graphic-design-service-card li {
+    margin-bottom: 4px;
+}
+
+
+
+
+.graphic-design-list ul {
+    list-style: disc inside;
+    margin: 0;
+    padding-left: 1em;
+}
+
+.graphic-design-list strong {
+    font-size: 1.2em;
+}
+
+.website-creation-services-container {
+    display: none;
+    justify-content: center;
+}
+
+.website-creation-services-container.active {
+    display: flex;
+}
+
+.website-creation-services-grid {
+    column-count: 3;
+    column-gap: 30px;
+    max-width: 1200px;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.website-creation-service-card {
+    background: white;
+    break-inside: avoid;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border: 2px solid black;
+}
+
+html.dark .website-creation-service-card {
+    background: black;
+    border: 2px solid white;
+}
+
+.website-creation-service-card h3 {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.website-creation-service-card ul {
+    padding-left: 20px;
+}
+
+.website-creation-service-card li {
+    margin-bottom: 4px;
+}
+
+
+
+
+.website-creation-list ul {
+    list-style: disc inside;
+    margin: 0;
+    padding-left: 1em;
+}
+
+.website-creation-list strong {
+    font-size: 1.2em;
+}
+
+html.dark .graphic-design-service-card,
+html.dark .website-creation-service-card {
+    color: white;
+}
+
+ul ul li::marker {
+    color: gray;
+}
+
+@media (max-width: 1000px) {
+    .services-grid {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 600px) {
+    .services-grid {
+        column-count: 1;
+    }
+}

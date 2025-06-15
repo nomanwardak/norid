@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Norid | Contact</title>
+    <script>
+        if (localStorage.getItem("theme") === "dark") {
+            document.documentElement.classList.add("dark");
+        }
+    </script>
+    <link rel="stylesheet" href="navbar.css">
+    <script src="toggle-mode.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="contact-styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="links-button">
+            <i class="ri-menu-fill nav-icon"></i>
+        </div>
+        <div class="nav-links">
+            <a class="nav-link" href="index.html">HOME</a>
+            <div class="portfolio-links">
+                <a class="nav-link portfolio-link" href="work.html">PORTFOLIOS <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <path d="M12 14L8 10H16L12 14Z"></path>
+                    </svg></a>
+                <div class="portfolios-dropdown">
+                    <a class="portfolio-dropdown-link" href="graphic-design-portfolio.html">Graphic Design</a>
+                    <a class="portfolio-dropdown-link" href="#">Website Creation</a>
+                </div>
+            </div>
+            <div class="services-links">
+                <a class="nav-link services-link" href="services.html">SERVICES <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <path d="M12 14L8 10H16L12 14Z"></path>
+                    </svg></a>
+                <div class="services-dropdown">
+                    <a class="service-dropdown-link" href="#">Graphic Design</a>
+                    <a class="service-dropdown-link" href="#">Website Creation</a>
+                </div>
+            </div>
+            <a class="nav-link" href="aboutme.html">ABOUT ME</a>
+            <a class="nav-link" href="contact.html">CONTACT</a>
+            <a class="nav-link" href="legal.html">LEGAL</a>
+        </div>
+        <div class="nav-icons">
+            <i class="ri-contrast-fill nav-icon" id="toggle-dark"></i>
+            <a class="hire-me" href="hire-me.html">HIRE ME</a>
+        </div>
+    </nav>
+    <main class="main">
+        <div class="main-container">
+
+            <div class="section">
+                <h1 class="page-heading">Contact</h1>
+                <h2 class="main-heading">Work With Me</h2>
+                <p>You can reach out to me through any of the following methods:</p>
+
+                <ul class="contact-methods">
+                    <li>
+                        <strong>Email</strong><br />
+                        You can email me at <a class="link" href="mailto:contact@norid.co">contact@norid.co</a>.<br />
+                        <small><em>Note: Not for cancellation or refund-related inquiries.</em></small>
+                    </li>
+
+                    <li>
+                        <strong>Discord</strong><br />
+                        My preferred communication method.<br />
+                        Discord username: <strong>imthatnorid</strong>
+                    </li>
+
+                    <li>
+                        <strong>Contact Form</strong><br />
+                        Use the form to send me a message with your project details.<br />
+                        <a class="link" href="hire-me.html">Go to the Hire Me form →</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="section">
+
+                <h2 class="main-heading">Cancel a Project</h2>
+
+                <p>To cancel a project or request a refund, you can email me at <a class="link"
+                        href="mailto:contact@norid.co">cancellations@norid.co</a>.</p>
+                <small><em>Note: Make sure you've read the <a class="link" href="legal.html">Refund Policy</a> before
+                        proceeding.</em></small>
+
+            </div>
+
+            <div class="section">
+                <h2 class="main-heading">Support & Feedback</h2>
+
+                <p>If you have any other inquiries or would like to give feedback, you can reach out to me at <a class="link"
+                        href="mailto:support@norid.co">support@norid.co</a></p>
+
+            </div>
+
+
+
+        </div>
+    </main>
+</body>
+
+</html>

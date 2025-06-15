@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/upheaval');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Space Mono', monospace;
+    background: white;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+html.dark {
+    background: black;
+    color: white;
+}
+
+.main {
+    width: 94vw;
+    height: 88vh;
+    margin: 0 auto;
+    border: 2px solid black;
+    padding: 30px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    border-radius: 5px;
+}
+
+html.dark .main {
+    border: 2px solid white;
+    transition: all 0.1s ease;
+}
+
+.main-container {
+    max-width: 640px;
+    margin: auto;
+}
+
+.page-heading {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Pixel Emulator', 'Space Mono', monospace;
+}
+
+.main-heading {
+    margin-bottom: 10px;
+}
+
+.link {
+    color: rgb(0, 58, 128);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.link:hover {
+    color: rgb(0, 39, 87);
+}
+
+.link {
+    color: hsl(213, 100%, 25%);
+}
+
+.link:hover {
+    color: hsl(213, 100%, 17%);
+}
+
+html.dark .link {
+    color: hsl(213, 100%, 87%);
+}
+
+html.dark .link:hover {
+    color: hsl(213, 100%, 79%);
+}
+
+ul {
+    margin-left: 20px;
+}
+
+.section {
+    margin-bottom: 20px;
+}

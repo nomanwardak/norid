@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Space Mono', monospace;
+    background: white;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+html.dark {
+    background: black;
+    color: white;
+}
+
+body {
+    position: relative;
+}
+
+.main {
+    width: 94vw;
+    height: 88vh;
+    margin: 0 auto;
+    border: 2px solid black;
+    padding: 30px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    border-radius: 5px;
+}
+
+.main.dark {
+    border: 2px solid white;
+    transition: all 0.1s ease;
+}
+
+.slideshow-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* z-index: 9999; */
+}
+
+.slideshow-overlay.active {
+    display: flex;
+}
+
+
+.thumbnail {
+    cursor: pointer;
+    overflow: hidden;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    transition: border-color 0.3s;
+}
+
+.thumbnail:hover {
+    border-color: #f00;
+}
+
+.slideshow {
+    display: none;
+}
+
+.slideshow.active {
+    display: block;
+}
+
+
+.thumbnail img {
+    width: 200px;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.page-heading {
+    text-align: center;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.details-container {
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.projects {
+    /* background-color: gray; */
+    width: 100%;
+    height: 500px;
+}
+
+.heading {
+    /* background-color: red; */
+    height: 60px;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+
+.close-icon {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    cursor: pointer;
+}
+
+.arrow {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.left-arrow {
+    left: 20px;
+}
+
+.right-arrow {
+    right: 20px;
+}
+
+.icons {
+    display: none;
+}
+
+.icons.active {
+    color: white;
+    z-index: 1000;
+    display: inline-block;
+    pointer-events: auto;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+
+.slideshow {
+    display: none;
+    position: fixed;
+    /* Ensures it's over everything */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    /* Ensure it's above all */
+    background: rgba(0, 0, 0, 0.8);
+    /* Optional: dark overlay */
+}
+
+.slideshow.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    display: grid;
+    place-content: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    --position: 33%;
+}
+
+.image-container {
+    max-width: 70vw;
+    max-height: 70vh;
+    /* aspect-ratio: 1/1; */
+}
+
+.slider-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+.image-before {
+    position: absolute;
+    inset: 0;
+    width: var(--position);
+}
+
+.slider {
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+    opacity: 0;
+    /* for Firefox */
+    width: 100%;
+    height: 100%;
+}
+
+.slider:focus-visible~.slider-button {
+    outline: 5px solid black;
+    outline-offset: 3px;
+}
+
+.slider-line {
+    position: absolute;
+    inset: 0;
+    width: .2rem;
+    height: 100%;
+    background-color: #fff;
+    /* z-index: 10; */
+    left: var(--position);
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.slider-button {
+    position: absolute;
+    background-color: #fff;
+    color: black;
+    padding: .5rem;
+    border-radius: 100vw;
+    display: grid;
+    place-items: center;
+    top: 50%;
+    left: var(--position);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    /* z-index: 100; */
+    box-shadow: 1px 1px 1px hsl(0, 50%, 2%, .5);
+}
+
+#slider.hidden {
+    visibility: hidden;
+}
+
+
+.image-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+.image-details * {
+    white-space: nowrap;
+}
+
+
+.id {
+    font-size: 20px;
+    color: white;
+}
+
+.button {
+    padding: 6px 12px;
+    font-family: 'Space Mono', monospace;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+}
+
+.button.active {
+    background-color: black;
+    color: white;
+}
+
+.thumbnail {
+    width: 500px;
+    height: auto;
+}
