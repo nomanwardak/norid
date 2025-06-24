@@ -1,0 +1,393 @@
+@font-face {
+    font-family: 'Pixel Emulator';
+    src: url('../Assets/fonts/Pixel%20Emulator.woff2') format('woff2'),
+        url('../Assets/fonts/Pixel-Emulator.woff') format('woff'),
+        url('../Assets/fonts/Pixel-Emulator.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Space Mono', monospace;
+    /* background: white; */
+    color: black;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+html.dark {
+    background: #111;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    min-width: 250px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1;
+    margin: 2.5vw;
+    margin-top: 0;
+    /* Adds the gap around only .main */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    border: 2px solid black;
+    border-radius: 0.5em;
+    box-sizing: border-box;
+    position: relative;
+}
+
+html.dark .main {
+    border: 2px solid white;
+    transition: all 0.1s ease;
+}
+
+.norid {
+    width: 50vw;
+    max-width: 1200px;
+    height: auto;
+}
+
+html.dark .norid {
+    filter: invert(1);
+}
+
+.main-buttons {
+    font-family: 'Pixel Emulator', 'Space Mono', monospace;
+    display: flex;
+    gap: 2rem;
+}
+
+.main-button {
+    border-radius: 0.3em;
+}
+
+.main-button-1 {
+    display: inline-flex;
+    width: 12rem;
+    height: 4rem;
+    border: 2px solid black;
+    background: white;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+html.dark .main-button-1 {
+    background: #111;
+    color: white;
+    border: 2px solid white;
+}
+
+.main-button-1:hover {
+    color: white;
+    background: #111;
+}
+
+html.dark .main-button-1:hover {
+    color: #111;
+    background-color: white;
+}
+
+.main-button-2 {
+    display: inline-flex;
+    width: 12rem;
+    height: 4rem;
+    border: 2px solid black;
+    background: #111;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+html.dark .main-button-2 {
+    background: white;
+    color: black;
+    border: 2px solid white;
+}
+
+.main-button-2:hover {
+    color: black;
+    background: white;
+}
+
+html.dark .main-button-2:hover {
+    background: #111;
+    color: white;
+    border: 2px solid white;
+}
+
+.titles-and-legal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titles {
+    position: absolute;
+    bottom: 3vh;
+    left: 3vw;
+    font-size: 0.9rem;
+}
+
+html.dark .titles {
+    color: white;
+}
+
+.legal-notice {
+    position: absolute;
+    bottom: 3vh;
+    right: 3vw;
+}
+
+html.dark .legal-notice {
+    color: white;
+}
+
+.legal-notice a {
+    color: hsl(213, 100%, 25%);
+}
+
+.legal-notice a:hover {
+    color: hsl(213, 100%, 17%);
+}
+
+html.dark .legal-notice a {
+    color: hsl(213, 100%, 87%);
+}
+
+html.dark .legal-notice a:hover {
+    color: hsl(213, 100%, 79%);
+}
+
+.dark-overlay {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.dark-overlay.active {
+    display: block;
+}
+
+@media (min-width: 1080px) and (max-width: 1200px) {
+
+    .main-button {
+        width: 11.5rem;
+        height: 3.5rem;
+        font-size: 1.1rem;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1079px) {
+    html {
+        font-size: 14px;
+
+    }
+
+    .norid {
+        width: 70vw;
+    }
+
+    .legal-notice {
+        display: none;
+    }
+
+    .titles {
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .page-heading {
+        font-size: 7vw;
+    }
+
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    html {
+        font-size: 14px;
+
+    }
+
+    .norid {
+        width: 75vw;
+    }
+
+    .main-buttons {
+        gap: 1rem;
+    }
+
+    .main-button {
+        width: 11.5rem;
+        height: 3.5rem;
+        font-size: 14px;
+    }
+
+    .legal-notice {
+        display: none;
+    }
+
+    .titles {
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .page-heading {
+        font-size: 9vw;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+    html {
+        font-size: 14px;
+
+    }
+
+    .norid {
+        width: 80vw;
+    }
+
+    .main-buttons {
+        gap: 1rem;
+    }
+
+    .main-button {
+        width: 9rem;
+        height: 3rem;
+        font-size: 12px;
+    }
+
+    .legal-notice {
+        display: none;
+    }
+
+    .titles {
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .page-heading {
+        font-size: 10vw;
+    }
+}
+
+@media (min-width: 250px) and (max-width: 319px) {
+    html {
+        font-size: 14px;
+
+    }
+
+    .norid {
+        width: 80vw;
+    }
+
+    .main {
+        gap: 10px;
+    }
+
+    .main-buttons {
+        gap: 0.5rem;
+    }
+
+    .main-button {
+        width: 7.2rem;
+        height: 2.4rem;
+        font-size: 12px;
+    }
+
+    .legal-notice {
+        display: none;
+    }
+
+    .titles {
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        font-size: 6px;
+    }
+
+    .page-heading {
+        font-size: 10vw;
+    }
+
+
+}
+
+@media (min-width: 0) and (max-width: 249px) {
+    html {
+        font-size: 14px;
+
+    }
+
+    .norid {
+        width: 200px;
+    }
+
+    .main {
+        gap: 10px;
+    }
+
+    .main-buttons {
+        gap: 0.5rem;
+    }
+
+    .main-button {
+        width: 7.2rem;
+        height: 2.4rem;
+        font-size: 12px;
+    }
+
+    .legal-notice {
+        display: none;
+    }
+
+    .titles {
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        font-size: 6px;
+    }
+
+    .page-heading {
+        font-size: 10vw;
+    }
+
+}

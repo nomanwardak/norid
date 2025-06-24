@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        if (localStorage.getItem("theme") === "dark") {
+            document.documentElement.classList.add("dark");
+        }
+    </script>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/home-styles.css">
+    <link rel="stylesheet" href="css/burger-menu.css">
+    <script src="js/toggle-mode.js" defer></script>
+    <script src="js/burger-menu-toggle.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <title>Norid | Home</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <button id="burgerButton" class="burger" aria-label="Menu Toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-links">
+            <a class="nav-link" href="home.html">HOME</a>
+            <div class="portfolio-links">
+                <div class="portfolios-link-container">
+                    <a class="nav-link portfolio-link" href="work.html">PORTFOLIOS</a>
+                    <i class="portfolios-dropdown-arrow-icon ri-arrow-down-s-line"></i>
+                </div>
+                <div class="portfolios-dropdown">
+                    <a class="portfolio-dropdown-link" href="graphic-design-portfolio.html">Graphic Design</a>
+                    <a class="portfolio-dropdown-link" href="#">Website Creation</a>
+                </div>
+            </div>
+            <div class="services-links">
+                <div class="services-link-container">
+                    <a class="nav-link services-link" href="services.html">SERVICES</a>
+                    <i class="services-dropdown-arrow-icon ri-arrow-down-s-line"></i>
+                </div>
+                <div class="services-dropdown">
+                    <a class="service-dropdown-link" href="services.html#graphicDesignServicesContainer">Graphic
+                        Design</a>
+                    <a class="service-dropdown-link" href="services.html#webCreationServicesContainer">Website
+                        Creation</a>
+                </div>
+            </div>
+            <a class="nav-link" href="aboutme.html">ABOUT ME</a>
+            <a class="nav-link" href="contact.html">CONTACT</a>
+            <a class="nav-link" href="legal.html">LEGAL</a>
+        </div>
+        <div class="nav-icons">
+            <i class="ri-contrast-fill nav-icon" id="toggle-dark"></i>
+            <a class="hire-me" href="hire-me.html">HIRE ME</a>
+        </div>
+    </nav>
+    <main class="main">
+        <div class="norid-container">
+            <img class="norid" draggable="false" oncontextmenu="return false;" src="Assets/NORID-light.svg" alt="NORID">
+        </div>
+        <div class="main-buttons">
+            <a href="work.html" class="main-button main-button-1">Portfolios</a>
+            <a href="hire-me.html" class="main-button main-button-2">Hire Me</a>
+        </div>
+        <div class="titles-and-legal">
+            <div class="titles">
+                <h2>Graphic Designer</h2>
+                <h2>Web Designer</h2>
+                <h2>Web Developer</h2>
+            </div>
+            <div class="legal-notice">
+                <p class="legal-notice-child-1"><i class="ri-copyright-line"></i> 2025 Norid.co</p>
+                <p class="legal-notice-child-2">All rights reserved.</p>
+                <a class="legal-notice-child-3" href="legal.html">Legal & Policies</a>
+            </div>
+        </div>
+
+    </main>
+    <div class="dark-overlay"></div>
+    <div class="hamburger-menu" id="hamburgerMenu">
+        <div class="h-nav-links">
+            <div class="h-link-container h-home-link-container">
+                <i class="ri-home-line"></i>
+                <a class="h-nav-link" href="home.html">HOME</a>
+            </div>
+            <div class="h-link-container h-portfolio-links-container">
+                <div class="h-nav-portfolio-link-container">
+                    <i class="ri-brush-line"></i>
+                    <a class="h-nav-link portfolio-link" href="work.html">PORTFOLIOS</a>
+                    <i class="h-portfolios-dropdown-arrow-icon ri-arrow-down-s-line"></i>
+
+                </div>
+                <div class="h-dropdown h-portfolios-dropdown">
+                    <a class="h-portfolio-dropdown-link" href="graphic-design-portfolio.html">Graphic Design</a>
+                    <a class="h-portfolio-dropdown-link" href="#">Website Creation</a>
+                </div>
+            </div>
+            <div class="h-link-container h-services-links-container">
+                <div class="h-nav-service-link-container">
+                    <i class="ri-hammer-line"></i>
+                    <a class="h-nav-link service-link" href="work.html">SERVICES</a>
+                    <i class="h-services-dropdown-arrow-icon ri-arrow-down-s-line"></i>
+                </div>
+                <div class="h-dropdown h-services-dropdown">
+                    <a class="h-service-dropdown-link" href="#">Graphic Design</a>
+                    <a class="h-service-dropdown-link" href="#">Website Creation</a>
+                </div>
+            </div>
+            <div class="h-link-container h-about-me-link-container">
+                <i class="ri-user-line"></i>
+                <a class="h-nav-link" href="aboutme.html">ABOUT ME</a>
+            </div>
+            <div class="h-link-container h-contact-link-container">
+                <i class="ri-mail-line"></i>
+                <a class="h-nav-link" href="contact.html">CONTACT</a>
+            </div>
+            <div class="h-link-container h-legal-link-container">
+                <i class="ri-file-line"></i>
+                <a class="h-nav-link" href="legal.html">LEGAL</a>
+            </div>
+        </div>
+        <div class="h-legal">
+            <div class="h-legal-notice">
+                <p class="h-legal-notice-child-1"><i class="ri-copyright-line"></i> 2025 Norid.co</p>
+                <p class="h-legal-notice-child-2">All rights reserved.</p>
+                <a class="h-legal-notice-child-3" href="legal.html">Legal & Policies</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

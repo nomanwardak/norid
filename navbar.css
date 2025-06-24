@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html {
+    font-size: 16px;
+}
+
+.navbar {
+    position: relative;
+    width: 100%;
+    min-height: 8vh;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;
+}
+
+.nav-links {
+    display: flex;
+    gap: 34px;
+    font-family: 'Pixel Emulator', 'Space Mono', monospace;
+}
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.burger span {
+    height: 2px;
+    width: 100%;
+    background: #000;
+    border-radius: 1px;
+    transition: 0.3s ease;
+}
+
+/* Animation for active state */
+.burger.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.burger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    padding: 8px;
+    transition: color ease-in 0.1s;
+}
+
+
+html.dark .nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+html.dark .nav-link:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.portfolio-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.portfolios-dropdown {
+    /* height: 200px;
+    width: 300px; */
+    padding: 15px 30px 15px 15px;
+    background-color: white;
+    border: 2px solid black;
+    position: absolute;
+    z-index: 5;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 0.3em;
+}
+
+.portfolio-dropdown-link {
+    font-size: 16px;
+    margin: 2px 0;
+    transition: all ease-in 0.1s;
+    text-decoration: none;
+    color: black;
+}
+
+.portfolio-dropdown-link:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.portfolios-link-container,
+.services-link-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+html.dark .portfolios-link-container i,
+html.dark .services-link-container i {
+    color: white;
+}
+
+
+.portfolio-links:hover .portfolios-dropdown {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.portfolios-dropdown-arrow-icon {
+    transition: all ease 0.2s;
+}
+
+.portfolio-links:hover .portfolios-dropdown-arrow-icon {
+    transform: rotate(-180deg);
+}
+
+.services-dropdown-arrow-icon {
+    transition: all ease 0.2s;
+}
+
+.services-links:hover .services-dropdown-arrow-icon {
+    transform: rotate(-180deg);
+}
+
+
+.portfolio-links:hover .portfolio-link {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+.services-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.services-dropdown {
+    /* height: 200px;
+    width: 300px; */
+    padding: 15px 30px 15px 15px;
+    background-color: white;
+    border: 2px solid black;
+    position: absolute;
+    z-index: 5;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 0.3em;
+}
+
+.service-dropdown-link {
+    font-size: 16px;
+    margin: 2px 0;
+    transition: all ease-in 0.1s;
+    text-decoration: none;
+    color: black;
+}
+
+.service-dropdown-link:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+.services-links:hover .services-dropdown {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.services-links:hover .services-link {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+html.dark .portfolios-dropdown,
+html.dark .services-dropdown {
+    background-color: black;
+    border: 2px solid white;
+}
+
+html.dark .portfolio-dropdown-link,
+html.dark .service-dropdown-link {
+    color: white;
+}
+
+html.dark .portfolio-dropdown-link:hover,
+html.dark .service-dropdown-link:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+html.dark .portfolio-links:hover .portfolio-link,
+html.dark .services-links:hover .services-link {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.nav-icons a {
+    text-decoration: none;
+}
+
+.nav-icon {
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+html.dark .nav-icon {
+    color: white;
+}
+
+.nav-link,
+.nav-icons {
+    flex-shrink: 1;
+}
+
+.hire-me {
+    font-family: 'Pixel Emulator', 'Space Mono', monospace;
+    padding: 10px 20px;
+    border: none;
+    background: black;
+    color: white;
+    outline: none;
+    border-radius: 0.3em;
+    font-size: 0.9rem;
+}
+
+html.dark .hire-me {
+    background: white;
+    color: black;
+}
