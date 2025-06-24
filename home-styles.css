@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'Pixel Emulator';
-    src: url('../Assets/fonts/Pixel%20Emulator.woff2') format('woff2'),
-        url('../Assets/fonts/Pixel-Emulator.woff') format('woff'),
-        url('../Assets/fonts/Pixel-Emulator.otf') format('opentype');
+    src: url('./Pixel%20Emulator.woff2') format('woff2'),
+        url('./Pixel-Emulator.woff') format('woff'),
+        url('./Pixel-Emulator.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
